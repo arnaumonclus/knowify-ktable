@@ -1,5 +1,8 @@
 # knowify-ktable
-Recruitment exercise done by Arnau Monclus @arnaumonclus during the end of November of 2021. Please, contact me for any doubt!
+Recruitment exercise done by Arnau Monclus @arnaumonclus during the end of November of 2021. Please, contact me for any doubt at arnaumonclus@gmail.com!
+
+Current version looks like that:
+![Final view of the exercise in Safari](/assets/img/screenshot.png)
 
 ## Analysis
 The objective is to create the markup of a unique web page screen (HTML + CSS + JS). All items given is a couple of mockups of the same view and in the same resolution view (desktop view).
