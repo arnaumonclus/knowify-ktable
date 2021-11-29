@@ -31,7 +31,7 @@ I tried to apply different solutions on the styling of the application, always t
 
 Javascript main.js file is divided in events and functions using the document.ready event as the first one. Even so, it doesn't seem very important because I couldn't add more than 30 lines of code :(
 
-The markup passed the crossbrowser for the most recent and used browsers (Chrome, Firefox and Safari). Please, don't ask for IE support, I don't like to waste my time.
+The markup passed the crossbrowser for the most recent and used browsers (Chrome 42+, Firefox 37+ and Safari 8+). Mobile versions compatible too. Please, don't ask for IE support, I don't like to waste my time.
 
 Bonus option is done too. Please check the main.js file where you will find the js logic added and writen in jQuery since it's already loaded for some other dependence and I feel comfortable with this oldie framework. Just to remark that I applied the filter for the visible elements. This shouldn't be a solution for a final version where we should iterate from all items calling a server or from a full data json previously stored in the user browser.
 
@@ -61,3 +61,5 @@ All different images used. Most of them got from Núria after sharing my problem
 - home.html (html markup for the main screen. You will find all the structure there, from 'doctype' until the closing html tag).
 - readme.md (just me!)
 
+## Check locally
+You only need to download all the project and open **home.html** with your favourite browser. No installations needed, no codes. Enjoy! :D
