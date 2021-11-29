@@ -1,3 +1,12 @@
+/* VARIABLES */
+
+$text-color: #1d1d1d;
+$blue-color: #1b72e8;
+$white-color: #ffffff;
+$main-font: "Proxima Nova", sans-serif;
+
+/* --------------------------- */
+
 /* TYPE */
 
 /* Proxima Nova regular */
@@ -47,7 +56,7 @@
 /* REBOOT */
 
 a {
-  color: #1b72e8;
+  color: $blue-color;
   text-decoration: none;
 }
 
@@ -72,16 +81,16 @@ a {
 
 body {
   background-color: #f8f8f8;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: $main-font;
 }
 
 header {
-  background-color: #fff;
+  background-color: $white-color;
   padding: 24px 0 0;
 }
 
 h1 {
-  color: #1d1d1d;
+  color: $text-color;
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 36px;
@@ -122,7 +131,7 @@ main {
       border-radius: 0;
       border-bottom-color: #1d1d1d;
       border-bottom-width: 2.5px;
-      color: #1d1d1d;
+      color: $text-color;
       font-weight: bold;
     }
   }
@@ -133,14 +142,14 @@ main {
 /* TABLES */
 
 .table {
-  background-color: #fff;
+  background-color: $white-color;
 
   & > tbody > tr {
     & > th {
       border: 1px solid #e5e6e6;
       border-width: 1px 0;
       color: rgb(116, 120, 123);
-      font-family: 'Proxima Nova', sans-serif;
+      font-family: $main-font;
       font-size: 14px;
       font-weight: 500;
       height: 20px;
@@ -179,7 +188,7 @@ main {
 
 .toolbar {
   .btn {
-    background-color: #ffffff;
+    background-color: $white-color;
     border: 1px solid #dedfe3;
     border-radius: 3px;
 
@@ -220,7 +229,7 @@ main {
 .input-group-sm>.form-select,
 .input-group-sm>.input-group-text {
   border-radius: 2px;
-  color: #1d1d1d;
+  color: $text-color;
   font-size: 1rem;
   font-weight: normal;
   line-height: 24px;
@@ -236,7 +245,7 @@ main {
 
 .input-group {
   &:focus {
-    box-shadow: 0 0 0 3px #1b72e8;
+    box-shadow: 0 0 0 3px $blue-color;
     outline: 2px solid #c2c2c6 !important;
     border-radius: 2px;
   }
@@ -244,7 +253,7 @@ main {
 
 .search-input {
   .input-group-text {
-    background-color: #fff;
+    background-color: $white-color;
     border-right: 0;
     border-color: #dedfe3;
     padding: 8px 8px 8px 12px;
@@ -262,7 +271,7 @@ main {
   width: 132px;
 
   .input-group-text {
-    background-color: #ffffff;
+    background-color: $white-color;
     border-radius: 2px;
     border-right: 0;
     border-color: #dedfe3;
@@ -280,7 +289,7 @@ main {
 
 .dropdown-select {
   .btn {
-    background-color: #fff;
+    background-color: $white-color;
     border: 1px solid #dedfe3;
     font-size: 1rem;
     letter-spacing: -0.4px;
@@ -296,7 +305,7 @@ main {
   .dropdown-toggle {
     border: 1px solid #dedfe3;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: $white-color;
     padding: 4px 8px;
 
     &.bs-placeholder {
@@ -311,7 +320,7 @@ main {
     &:focus,
     &:active {
       outline: 3px solid #c2c2c6 !important;
-      box-shadow: 0 0 0 2px #1b72e8;
+      box-shadow: 0 0 0 2px $blue-color;
     }
 
     &:after {
@@ -342,13 +351,13 @@ main {
 
     .selected {
       &.active {
-        background-color: #fff;
-        color: #1d1d1d;
+        background-color: $white-color;
+        color: $text-color;
         font-weight: bold;
 
         .check-mark {
           background : url(../img/check.svg) no-repeat;
-          color: #1b72e8;
+          color: $blue-color;
           font-size: 0;
           width: 16px;
           height: 16px;
