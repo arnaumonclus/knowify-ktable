@@ -72,7 +72,7 @@ a {
 
 body {
   background-color: #f8f8f8;
-  font-family: 'Proxima Nova';
+  font-family: 'Proxima Nova', sans-serif;
 }
 
 header {
@@ -140,7 +140,7 @@ main {
       border: 1px solid #e5e6e6;
       border-width: 1px 0;
       color: rgb(116, 120, 123);
-      font-family: Proxima Nova;
+      font-family: 'Proxima Nova', sans-serif;
       font-size: 14px;
       font-weight: 500;
       height: 20px;
@@ -177,15 +177,30 @@ main {
 
 /* BUTTONS */
 
-.toolbar .btn {
-  background-color: #ffffff;
-  border: 1px solid #dedfe3;
-  border-radius: 3px;
+.toolbar {
+  .btn {
+    background-color: #ffffff;
+    border: 1px solid #dedfe3;
+    border-radius: 3px;
 
-  &.square {
+    &.square {
+      height: 32px;
+      padding: 7px;
+      width: 32px;
+
+      img {
+        vertical-align: initial;
+      }
+    }
+  }
+
+  .paginator-buttons .btn {
     height: 32px;
-    padding: 4px;
-    width: 32px;
+    width: 24px;
+
+    img {
+      vertical-align: sub;
+    }
   }
 }
 
@@ -212,6 +227,18 @@ main {
 
   &::placeholder {
     color: #74787b;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.input-group {
+  &:focus {
+    box-shadow: 0 0 0 3px #1b72e8;
+    outline: 2px solid #c2c2c6 !important;
+    border-radius: 2px;
   }
 }
 
@@ -276,7 +303,13 @@ main {
 
     }
 
-    &:focus {
+    &:hover {
+      outline: 3px solid #c2c2c6 !important;
+      transition: .1s;
+    }
+
+    &:focus,
+    &:active {
       outline: 3px solid #c2c2c6 !important;
       box-shadow: 0 0 0 2px #1b72e8;
     }
@@ -304,7 +337,7 @@ main {
 
   .dropdown-menu {
     border: 0;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     padding: 16px 0;
 
     .selected {
@@ -375,9 +408,20 @@ main {
 
 /* --------------------------- */
 
-/* TOOLTIP */
+/* OTHER SPECIFIC COMPONENTS */
 
-.paginator {
-  font-size: .9rem;
-  font-weight: 500;
+.toolbar {
+  .right-section {
+    & > div {
+      vertical-align: middle;
+    }
+  }
+
+  .paginator {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+    vertical-align: sub;
+    display: inline-block;
+  }
 }
